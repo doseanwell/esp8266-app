@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">多为电子 </string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="username">用户名</string>
+	<string name="SNnumber">SN号码</string>
+    <string name="key">密钥号</string>
+    <string name="remember">记住用户信息</string>
+	<string name="enter">登陆</string>
+	
+	<string name="fasttest">快速测试</string>
+	<string name="wificfg">配置</string>
+	<string name="startcfg">开始配置</string>
+	<string name="ssid">dowell</string>
+	<string name="password">dowell88</string>
+	<string name="dev_sn">123456</string>
+	<string name="server_port">2020</string>
+</resources>

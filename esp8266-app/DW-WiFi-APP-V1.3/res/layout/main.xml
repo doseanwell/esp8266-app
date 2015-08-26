@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.mysocketclienttest.MainActivity" >
+
+    <ToggleButton
+        android:id="@+id/toggleLedBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:textOff="开灯"
+        android:textOn="关灯" />
+
+    <ToggleButton
+        android:id="@+id/toggleBeepBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toggleLedBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:textOff="开蜂鸣器"
+        android:textOn="关蜂鸣器" />
+
+</RelativeLayout>

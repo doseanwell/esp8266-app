@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.mysocketclienttest.MainActivity" >
+
+    <EditText
+        android:id="@+id/SNnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/username"
+        android:layout_alignBottom="@+id/username"
+        android:layout_toLeftOf="@+id/username"
+        android:text="@string/username" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/SNnumber"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="178dp"
+        android:ems="10"
+        android:inputType="textPersonName" >
+        <requestFocus />
+    </EditText>
+
+    <CheckBox
+        android:id="@+id/chcInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnEnter"
+        android:layout_alignBottom="@+id/btnEnter"
+        android:layout_alignLeft="@+id/textView3"
+        android:text="@string/remember" />
+
+    <EditText
+        android:id="@+id/userkey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+        
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/userkey"
+        android:layout_alignBottom="@+id/userkey"
+        android:layout_alignRight="@+id/textView3"
+        android:text="@string/key" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/SNnumber"
+        android:layout_alignBottom="@+id/SNnumber"
+        android:layout_alignRight="@+id/textView2"
+        android:text="@string/SNnumber" />
+
+    <Button
+        android:id="@+id/btnWifiCfg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnEnter"
+        android:layout_below="@+id/btnEnter"
+        android:text="@string/wificfg" />
+
+    <Button
+        android:id="@+id/btnEnter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/SNnumber"
+        android:layout_below="@+id/SNnumber"
+        android:text="@string/enter" />
+
+    <Button
+        android:id="@+id/btnFastTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="67dp"
+        android:text="@string/fasttest" />
+
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/editTSSID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:text="@string/ssid" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTSSID"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:text="@string/password" />
+
+    <EditText
+        android:id="@+id/editTSN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTPassword"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:text="@string/dev_sn" />
+
+    <EditText
+        android:id="@+id/editTPort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTSN"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:text="@string/server_port" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTSSID"
+        android:layout_alignBottom="@+id/editTSSID"
+        android:layout_marginRight="18dp"
+        android:layout_toLeftOf="@+id/editTSSID"
+        android:text="SSID" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTPassword"
+        android:layout_alignBottom="@+id/editTPassword"
+        android:layout_alignLeft="@+id/textView1"
+        android:text="密钥" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTSN"
+        android:layout_alignBottom="@+id/editTSN"
+        android:layout_alignRight="@+id/textView2"
+        android:text="SN号" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTPort"
+        android:layout_alignBottom="@+id/editTPort"
+        android:layout_alignRight="@+id/textView3"
+        android:text="端口" />
+
+    <Button
+        android:id="@+id/btnWifiCfgStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editTPort"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/startcfg" />
+
+    <CheckBox
+        android:id="@+id/checkWifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignTop="@+id/btnWifiCfgStart"
+        android:text="@string/remember" />
+
+</RelativeLayout>
